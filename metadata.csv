@@ -3,20 +3,20 @@ Title,Distressed Housing Tracts
 Description,"An extract of a subset of columns from the FFIEC Census Flat File, including"
 Description,flags that indicate a tract is distressed.
 Identifier,f0234344-8376-41ba-a62a-4a1c966366fe
-Name,ffiec.gov-census-tract-1.5.1
+Name,ffiec.gov-census-tract-1.5.2
 Dataset,census
 Origin,ffiec.gov
 Time,
 Space,
 Grain,tract
 Variant,
-Version,1.5.1
+Version,1.5.2
 Version.Major,1
 Version.Minor,5
-Version.Patch,1
+Version.Patch,2
 Created,2020-05-26T18:06:28
-Modified,2020-06-13T04:32:03
-Giturl,https://github.com/metatab-packages/ffeic.gov-census-tract.git
+Modified,2020-06-13T05:20:35
+Giturl,https://github.com/metatab-packages/ffiec.gov-census-tract.git
 ""
 Section,Contacts,Email,Organization,Url,
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
@@ -27,19 +27,19 @@ Homepage,https://www.ffiec.gov/censusapp.htm,homepage,,,
 Documentation,doc/cen2018.pdf,File information,"Description of the 2018 census file, including all columns. Other years are similar",,
 ""
 Section,References,Name,Description,,
-Reference,https://www.ffiec.gov/Census/Census_Flat_Files/Census2013.zip#*.csv,ffeic_census_2013,2013 Census Flat File,,
-Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2014.ZIP#*.csv,ffeic_census_2014,2014 Census Flat File,,
-Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2015.zip#*.csv,ffeic_census_2015,2015 Census Flat File,,
-Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2016.zip#*.csv,ffeic_census_2016,2016 Census Flat File,,
-Reference,data/Census2017.zip#*.csv,ffeic_census_2017,2017 Census Flat File,,
-Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2018.zip#*.csv,ffeic_census_2018,2018 Census Flat File,,
-Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2019.zip#*.csv,ffeic_census_2019,2019 Census Flat File,,
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/Census2013.zip#*.csv,ffiec_census_2013,2013 Census Flat File,,
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2014.ZIP#*.csv,ffiec_census_2014,2014 Census Flat File,,
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2015.zip#*.csv,ffiec_census_2015,2015 Census Flat File,,
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2016.zip#*.csv,ffiec_census_2016,2016 Census Flat File,,
+Reference,data/Census2017.zip#*.csv,ffiec_census_2017,2017 Census Flat File,,
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2018.zip#*.csv,ffiec_census_2018,2018 Census Flat File,,
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2019.zip#*.csv,ffiec_census_2019,2019 Census Flat File,,
 ""
 Section,Resources,Name,Description,,
-Datafile,python:pylib#row_generator,ffeic_distressed,Distressed tracts,,
+Datafile,python:pylib#row_generator,ffiec_distressed,Distressed tracts,,
 ""
 Section,Schema,DataType,col_pos,Description,
-Table,ffeic_distressed,,,,
+Table,ffiec_distressed,,,,
 Table.Column,geoid,string,,ACS Geoid for tract,
 Table.Column,year,integer,1,Key field.  HMDA/CRA collection year,
 Table.Column,msa_md_code,integer,2,Key field.  MSA/MD Code,
@@ -55,7 +55,7 @@ Table.Column,msa_family_income,integer,11,Median Family Income of MSA in which t
 Table.Column,msa_household_income,integer,12,Median Household Income of MSA in which tract resides,
 Table.Column,tract_household_income,integer,377,Median household income for tract.,
 Table.Column,tract_family_income_pct,number,13,"Tract median family income as a percentage of the MSA/MD median family income. Two decimal places, truncated.",
-Table.Column,ffeic_median_income,integer,14,FFIEC Estimated MSA/MD Median Family Income,
+Table.Column,ffiec_median_income,integer,14,FFIEC Estimated MSA/MD Median Family Income,
 Table.Column,population,integer,15,Total persons,
 Table.Column,families,integer,16,Total families,
 Table.Column,households,integer,17,Total households,
