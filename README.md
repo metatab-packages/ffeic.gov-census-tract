@@ -14,4 +14,4 @@ This dataset extracts the columns for distrssed tracts from the FFIEC compilatio
 
 ## Caveats
 
-The 2017 file, as distributed by FFEIC, is broken: it includes a ZIP file with in the ZIP file, which Metapack cannot read. This file has been manually extracted and stored in the source package. 
+The 2017 file, as distributed by FFIEC, is broken: it includes a ZIP file with in the ZIP file, which Metapack cannot read. This file has been manually extracted and stored in the source package. 
