@@ -1,21 +1,21 @@
 Declare,metatab-latest
-Title,Distressed Housing Tracts 2013-2020
+Title,Distressed Housing Tracts 2013-2021
 Description,"An extract of a subset of columns from the FFIEC Census Flat File, including"
 Description,flags that indicate a tract is distressed.
 Identifier,f0234344-8376-41ba-a62a-4a1c966366fe
-Name,ffiec.gov-census-tract-1.6.3
+Name,ffiec.gov-census-tract-1.6.4
 Dataset,census
 Origin,ffiec.gov
 Time,
 Space,
 Grain,tract
 Variant,
-Version,1.6.3
+Version,1.6.4
 Version.Major,1
 Version.Minor,6
-Version.Patch,3
+Version.Patch,4
 Created,2020-05-26T18:06:28
-Modified,2022-01-12T21:12:19
+Modified,2022-01-12T23:37:08
 Giturl,https://github.com/metatab-packages/ffiec.gov-census-tract.git
 ""
 Section,Contacts,Email,Organization,Url,
@@ -35,6 +35,7 @@ Reference,data/Census2017.zip#*.csv,ffiec_census_2017,2017 Census Flat File,,
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2018.zip#*.csv,ffiec_census_2018,2018 Census Flat File,,
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2019.zip#*.csv,ffiec_census_2019,2019 Census Flat File,,
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2020.zip#*.csv,ffiec_census_2020,2020 Census Flat File,,
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2021.zip#*.csv,ffiec_census_2021,2021 Census Flat File,,
 ""
 Section,Resources,Name,Description,,
 Datafile,python:pylib#row_generator,ffiec_distressed,Distressed tracts,,
