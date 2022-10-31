@@ -3,29 +3,29 @@ Title,Distressed Housing Tracts 2013-2021
 Description,"An extract of a subset of columns from the FFIEC Census Flat File, including"
 Description,flags that indicate a tract is distressed.
 Identifier,f0234344-8376-41ba-a62a-4a1c966366fe
-Name,ffiec.gov-census-tract-1.6.4
+Name,ffiec.gov-census-2013e2021-tract-1.7.1
 Dataset,census
 Origin,ffiec.gov
-Time,
+Time,2013e2021
 Space,
 Grain,tract
 Variant,
-Version,1.6.4
+Version,1.7.1
 Version.Major,1
-Version.Minor,6
-Version.Patch,4
+Version.Minor,7
+Version.Patch,2
 Created,2020-05-26T18:06:28
-Modified,2022-01-12T23:37:08
-Giturl,https://github.com/metatab-packages/ffiec.gov-census-tract.git
-""
+Modified,2022-10-31T16:10:42
+Giturl,https://github.com/metatab-packages/ffiec.gov-census-2013e2021-tract
+
 Section,Contacts,Email,Organization,Url,
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
-""
+
 Section,Documentation,Title,Description,,
 Documentation,file:README.md,README,,,
 Homepage,https://www.ffiec.gov/censusapp.htm,homepage,,,
 Documentation,doc/cen2018.pdf,File information,"Description of the 2018 census file, including all columns. Other years are similar",,
-""
+
 Section,References,Name,Description,,
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/Census2013.zip#*.csv,ffiec_census_2013,2013 Census Flat File,,
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2014.ZIP#*.csv,ffiec_census_2014,2014 Census Flat File,,
@@ -36,10 +36,12 @@ Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2018.zip#*.csv,ff
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2019.zip#*.csv,ffiec_census_2019,2019 Census Flat File,,
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2020.zip#*.csv,ffiec_census_2020,2020 Census Flat File,,
 Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CENSUS2021.zip#*.csv,ffiec_census_2021,2021 Census Flat File,,
-""
+Reference,https://www.ffiec.gov/Census/Census_Flat_Files/CensusFlatFile2022.zip#*.csv,ffiec_census_2022,2022 Census Flat File,,
+
 Section,Resources,Name,Description,,
 Datafile,python:pylib#row_generator,ffiec_distressed,Distressed tracts,,
-""
+,,,,,
+
 Section,Schema,DataType,col_pos,Description,
 Table,ffiec_distressed,,,,
 Table.Column,geoid,string,,ACS Geoid for tract,

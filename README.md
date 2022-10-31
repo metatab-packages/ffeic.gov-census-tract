@@ -1,4 +1,4 @@
-# Distressed Housing Tracts
+# Distressed Housing Tracts 2013-2021
 
 This dataset extracts the columns for distressed tracts from the FFIEC compilation of census data, for use in their FFIEC Census Windows Application. It includes only 25 columns, the first 17 columns of the file, which have geographic identifiers, median income, and three population totals. The reamaining 8 columns hold flags to indicate if a tract is distressed. 
 
@@ -15,3 +15,5 @@ This dataset extracts the columns for distressed tracts from the FFIEC compilati
 ## Caveats
 
 The 2017 file, as distributed by FFIEC, is broken: it includes a ZIP file with in the ZIP file, which Metapack cannot read. This file has been manually extracted and stored in the source package. 
+
+The 2022 file include about 11,400 more tracts than previous years, 87275 tracts vs 75883 from prior years. 
